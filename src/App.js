@@ -1,7 +1,22 @@
-import React from 'react';
+import React from "react";
 
-function App() {
-  return <h1>do Front ao End</h1>;
-}
+
+import Colors from "./styles/settings/colors";
+import Spacing from "./styles/settings/spacing";
+import Reset from "./styles/generic/reset";
+import Base from "./styles/base";
+
+import Home from "./pages/Home";
+
+const App = () => (
+    <>
+        <Colors />
+        <Spacing />
+        <Reset />
+        <Base />
+
+        <Home />
+    </>
+);
 
 export default App;
