@@ -7,10 +7,12 @@ import Reset from "./styles/generic/reset";
 import Base from "./styles/base";
 
 import Home from "./pages/Home";
+import Size from "./styles/settings/size";
 
 const App = () => (
     <>
         <Colors />
+        <Size />
         <Spacing />
         <Reset />
         <Base />
