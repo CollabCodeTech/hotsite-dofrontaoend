@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Wrapper } from "./styles";
+import { Wrapper, Section } from "./styles";
 
 import SubtitleCollab from "../../objects/SubtitleCollab";
 import TextCollab from "../../objects/TextCollab";
@@ -11,18 +11,20 @@ import FormLead from "../../components/FormLead";
 
 const Home = () => (
     <Wrapper>
-        <TitleDofrontaoend>do Front ao End</TitleDofrontaoend>
-        <SubtitleCollab>
-            Um guia completo para quem quer se tornar um Desenvolvedor Front End
-        </SubtitleCollab>
+        <Section>
+            <TitleDofrontaoend>do Front ao End</TitleDofrontaoend>
+            <SubtitleCollab>
+                Um guia completo para quem quer se tornar um Desenvolvedor Front End
+            </SubtitleCollab>
 
-        <VideoDofrontaoend />
+            <VideoDofrontaoend />
 
-        <TextCollab>
-            Quer receber novidades da próxima turma, só colocar seu email abaixo.
-        </TextCollab>
+            <TextCollab>
+                Quer receber novidades da próxima turma, só colocar seu email abaixo.
+            </TextCollab>
 
-        <FormLead />
+            <FormLead />
+        </Section>
     </Wrapper>
 );
 

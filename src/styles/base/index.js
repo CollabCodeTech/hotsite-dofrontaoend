@@ -1,8 +1,14 @@
 import { createGlobalStyle } from "styled-components";
 
 const Base = createGlobalStyle`
-    body {
+    html, body {
+        font-size: var(--size-base);
         font-family: 'Roboto Slab', serif;
+    }
+
+    input {
+        font-family: inherit;
+        font-size: inherit;
     }
 `;
 
