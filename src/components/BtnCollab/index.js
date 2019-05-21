@@ -4,19 +4,28 @@ const BtnCollab = styled.input.attrs({
     type: "submit",
     value: ({content}) => content
 })`
+    box-sizing: border-box;
+    background-color: var(--color-zero);
     width: 130px;
+    height: 40px;
     border-radius: var(--radius-small);
     color: var(--color-first);
     font-weight: bold;
     font-size: var(--size-small);
-    transition: background-color 200ms linear;
     cursor: pointer;
+    box-shadow: 0px 0px 0px var(--color-base);
+    will-change: transform;
+    transition: transform 100ms linear, box-shadow 100ms linear;
+    
 
     &:focus,
     &:hover {
-        background-color: var(--color-first);
-        color: var(--color-zero);
-        border: 1px solid var(--color-zero);
+        transform: translateY(-3px);
+        box-shadow: 0px 2px 4px var(--color-base);
+    }
+
+    &:active {
+        transform: translateY(-1px);
     }
 `;
 
