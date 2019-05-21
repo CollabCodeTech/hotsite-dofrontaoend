@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 import SubtitleCollab from "../../objects/SubtitleCollab";
-import TextCollab from "../../objects/TextCollab";
 import VideoDofrontaoend from "../../components/VideoDofrontaoend";
 import { Form } from "../../components/FormLead/styles.js";
 
@@ -20,10 +19,6 @@ export const Section = styled.section`
     &> ${SubtitleCollab},
     &> ${VideoDofrontaoend} {
         margin-bottom: var(--spacing-big);
-    }
-
-    &> ${TextCollab} {
-        margin-bottom: var(--spacing-small);
     }
 
     &> ${Form} {
