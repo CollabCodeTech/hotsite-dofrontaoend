@@ -4,6 +4,8 @@ import TextCollab from "../../objects/TextCollab";
 import InputCollab from "../../objects/InputCollab";
 
 export const Form = styled.form`
+    position: relative;
+
     &> ${TextCollab} {   
         margin-bottom: var(--spacing-small);
     }
