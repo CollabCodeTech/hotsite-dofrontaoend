@@ -1,22 +1,37 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
-const BtnCollab = styled.input.attrs({
-    type: "submit",
-    value: ({content}) => content
+const BtnCollab = styled.button.attrs({
+    type: "submit"
 })`
-    width: 130px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    background-color: var(--color-zero);
+    width: ${({loading}) => loading ? "100%" : "140px"};
+    height: 40px;
     border-radius: var(--radius-small);
     color: var(--color-first);
     font-weight: bold;
     font-size: var(--size-small);
-    transition: background-color 200ms linear;
+    box-shadow: 0px 0px 0px var(--color-base);
+    will-change: transform, width;
+    transition: transform 100ms linear, 
+                box-shadow 100ms linear, 
+                width 600ms cubic-bezier(.94,-0.64,0,1);
     cursor: pointer;
 
-    &:focus,
-    &:hover {
-        background-color: var(--color-first);
-        color: var(--color-zero);
-        border: 1px solid var(--color-zero);
+    ${({loading}) => !loading && css`
+            &:focus,
+            &:hover {
+                transform: translateY(-3px);
+                box-shadow: 0px 2px 4px var(--color-base);
+            }
+
+            &:active {
+                transform: translateY(-1px);
+            }
+        `
     }
 `;
 
