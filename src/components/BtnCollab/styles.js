@@ -1,6 +1,10 @@
 import styled, { css } from "styled-components";
 
-export const Button = styled.button.attrs({
+export const Text = styled.div`
+    transform: scale(1);
+`;
+
+export const BtnCollab = styled.button.attrs({
     type: "submit"
 })`
     position: absolute;
@@ -8,28 +12,26 @@ export const Button = styled.button.attrs({
     bottom: 0;
     box-sizing: border-box;
     background-color: var(--color-zero);
-    width: 100%;
+    width: ${({loading}) => loading ? "100%" : "140px"};
     height: 40px;
     border-radius: var(--radius-small);
-    color: var(--color-zero);
+    color: var(--color-first);
     font-weight: bold;
     font-size: var(--size-small);
     box-shadow: 0px 0px 0px var(--color-base);
-    will-change: transform;
-    transform-origin: right;
-    transform: ${({loading}) => loading ? "scaleX(1)" : "scaleX(0.27)"};
-    transition: transform ${({loading}) => loading ? "400ms" : "100ms"} linear, box-shadow 100ms linear, width 300ms linear;
+    will-change: transform, width;
+    transition: transform 100ms linear, box-shadow 100ms linear, width 300ms linear;
     cursor: pointer;
 
     ${({loading}) => !loading && css`
             &:focus,
             &:hover {
-                transform: translateY(-3px) scaleX(0.27);
+                transform: translateY(-3px);
                 box-shadow: 0px 2px 4px var(--color-base);
             }
 
             &:active {
-                transform: translateY(-1px) scaleX(0.27);
+                transform: translateY(-1px);
             }
         `
     }
