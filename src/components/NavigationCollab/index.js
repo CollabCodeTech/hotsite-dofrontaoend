@@ -1,10 +1,14 @@
 import React from "react";
 
-import {Navigation, Item} from "./styles";
+import {Navigation, Item, Number, Content} from "./styles";
 
-const NavigationCollab = ({items}) => (
+const NavigationCollab = ({items, hover}) => (
     <Navigation>
-        {items.map(content => <Item>{content}</Item>)}
+        {items.map((content, key) => (
+            <Item key={key}>
+                <Number>{key}</Number> <Content hover>{content}</Content>
+            </Item>
+        ))}
     </Navigation>
 );
 

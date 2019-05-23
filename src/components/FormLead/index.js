@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 
 import { Form } from "./styles";
 import InputCollab from "../../objects/InputCollab";
@@ -7,7 +7,7 @@ import TextCollab from "../../objects/TextCollab";
 
 const FormLead = () => {
     const [loading, setLoading] = useState(false);
-    const [content, setContent] = useState("Receber")
+    const [content, setContent] = useState("Receber");
 
     return (
         <Form>
