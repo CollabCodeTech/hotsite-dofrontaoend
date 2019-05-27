@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Navigation = styled.ol``;
 
 export const Item = styled.li`
-    color: var(--color-second);
+    color: ${({itemActive}) => itemActive ? "var(--color-first)" : "var(--color-second)"};
     font-weight: bold;
     font-size: var(--size-big);
 

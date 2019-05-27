@@ -5,13 +5,13 @@ import { Header } from "./styles";
 import LogoCollab from "../../objects/LogoCollab";
 import NavigationCollab from "../NavigationCollab";
 
-const HeaderCollab = () => {
+const HeaderCollab = (props) => {
     const items = [
-        "Como funciona?", 
-        "Git e GitHub", 
+        "Como funciona?",
+        "Git e GitHub",
         "HTML5 e CSS3",
-        "JavaScript Moderno", 
-        "Webpack e Gulp", 
+        "JavaScript Moderno",
+        "Webpack e Gulp",
         "React",
         "User Experience"
     ];
@@ -20,7 +20,7 @@ const HeaderCollab = () => {
         <Header>
             <LogoCollab />
 
-            <NavigationCollab items={items} />
+            <NavigationCollab {...props} items={items} />
         </Header>
     )
 };
