@@ -10,7 +10,7 @@ export const Header = styled.header`
     padding: 20px 20px 0;
     width: 40px;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
