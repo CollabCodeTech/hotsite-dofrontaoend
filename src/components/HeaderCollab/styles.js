@@ -17,6 +17,7 @@ export const Header = styled.header`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    will-change: width;
     transition: width 300ms linear;
     cursor: pointer;
 

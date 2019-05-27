@@ -8,7 +8,6 @@ export const Figure = styled.figure`
 
     &> ${AvatarCollab} {
         margin-right: var(--spacing-small);
-        float: left;
     }
 `;
 
