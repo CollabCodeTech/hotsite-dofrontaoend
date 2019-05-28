@@ -1,9 +1,9 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Navigation = styled.ol``;
 
 export const Item = styled.li`
-    color: ${({itemActive}) => itemActive ? "var(--color-first)" : "var(--color-second)"};
+    color: var(--color-second);
     font-weight: bold;
     font-size: var(--size-big);
 
@@ -19,5 +19,47 @@ export const Number = styled.span`
 `;
 
 export const Content = styled.strong`
+    vertical-align: bottom;
+    font-size: var(--size-half-big);
+    position: relative;
     font-weight: normal;
+    
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: var(--color-first);
+        transform-origin: left;
+        transform: scaleX(0) translateY(100%);
+        transition: 200ms transform linear;
+    }
+
+    ${({itemActive}) => itemActive && css`
+        &::after {
+            transform: scaleX(1) translateY(100%);
+        }
+    `}
 `
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

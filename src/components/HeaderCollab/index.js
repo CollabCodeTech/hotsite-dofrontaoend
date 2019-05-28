@@ -17,7 +17,7 @@ const HeaderCollab = (props) => {
     ];
 
     return (
-        <Header>
+        <Header active={props.itemActive >= 0}>
             <LogoCollab />
 
             <NavigationCollab {...props} items={items} />

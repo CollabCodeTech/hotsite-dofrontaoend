@@ -8,12 +8,9 @@ import Lead from "../Lead";
 import Menu from "../Menu";
 
 const Home = () => {
-    const [active, setActive] = useState(false);
+    const [active, setActive] = useState();
 
-    const handleClick = key => {
-        console.log("Valor da Key", key);
-        setActive(key)
-    };
+    const handleClick = key => setActive(key);
 
     return (
         <Main>
