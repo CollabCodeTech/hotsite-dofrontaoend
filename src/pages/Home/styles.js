@@ -1,8 +1,8 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
-import SubtitleCollab from "../../objects/SubtitleCollab";
-import VideoDofrontaoend from "../../components/VideoDofrontaoend";
-import { Form } from "../../components/FormLead/styles.js";
+import SubtitleCollab from '../../objects/SubtitleCollab'
+import VideoDofrontaoend from '../../components/VideoDofrontaoend'
+import { Form } from '../../components/FormLead/styles'
 
 export const Section = styled.section`
     display: flex;
@@ -11,20 +11,19 @@ export const Section = styled.section`
     width: 60%;
     min-width: 545px;
 
-    &> ${SubtitleCollab} {
+    & > ${SubtitleCollab} {
         width: 500px;
         text-align: center;
     }
 
-    &> ${SubtitleCollab},
-    &> ${VideoDofrontaoend} {
+    & > ${SubtitleCollab}, & > ${VideoDofrontaoend} {
         margin-bottom: var(--spacing-big);
     }
 
-    &> ${Form} {
+    & > ${Form} {
         min-width: 545px;
     }
-`;
+`
 
 export const Wrapper = styled.main`
     background-color: var(--color-first);
@@ -33,5 +32,4 @@ export const Wrapper = styled.main`
     display: flex;
     justify-content: center;
     align-items: center;
-`;
-
+`

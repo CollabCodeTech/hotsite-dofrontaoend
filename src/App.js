@@ -1,12 +1,12 @@
-import React from "react";
+import React from 'react'
 
-import Colors from "./styles/settings/colors";
-import Spacing from "./styles/settings/spacing";
-import Reset from "./styles/generic/reset";
-import Base from "./styles/base";
+import Colors from './styles/settings/colors'
+import Spacing from './styles/settings/spacing'
+import Reset from './styles/generic/reset'
+import Base from './styles/base'
 
-import Home from "./pages/Home";
-import Size from "./styles/settings/size";
+import Home from './pages/Home'
+import Size from './styles/settings/size'
 
 const App = () => (
     <>
@@ -18,6 +18,6 @@ const App = () => (
 
         <Home />
     </>
-);
+)
 
-export default App;
+export default App

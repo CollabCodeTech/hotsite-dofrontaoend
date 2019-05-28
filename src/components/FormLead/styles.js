@@ -1,16 +1,16 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
-import TextCollab from "../../objects/TextCollab";
-import InputCollab from "../../objects/InputCollab";
+import TextCollab from '../../objects/TextCollab'
+import InputCollab from '../../objects/InputCollab'
 
 export const Form = styled.form`
     position: relative;
 
-    &> ${TextCollab} {   
+    & > ${TextCollab} {
         margin-bottom: var(--spacing-small);
     }
 
-    &> ${InputCollab} {
+    & > ${InputCollab} {
         margin-right: var(--spacing-small);
     }
-`;
+`

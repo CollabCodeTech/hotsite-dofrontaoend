@@ -1,10 +1,10 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
-import collabcode from "../../img/collabcode.png";
+import collabcode from '../../img/collabcode.png'
 
-const CollabCode = styled.img.attrs({src: collabcode})`
+const CollabCode = styled.img.attrs({ src: collabcode })`
     display: inline-block;
     height: 80%;
-`;
+`
 
-export default CollabCode;
+export default CollabCode

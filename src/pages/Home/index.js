@@ -1,13 +1,13 @@
-import React from "react";
+import React from 'react'
 
-import { Wrapper, Section } from "./styles";
+import { Wrapper, Section } from './styles'
 
-import SubtitleCollab from "../../objects/SubtitleCollab";
+import SubtitleCollab from '../../objects/SubtitleCollab'
 
-import HeaderCollab from "../../components/HeaderCollab";
-import TitleDofrontaoend from "../../components/TitleDofrontaoend";
-import VideoDofrontaoend from "../../components/VideoDofrontaoend";
-import FormLead from "../../components/FormLead";
+import HeaderCollab from '../../components/HeaderCollab'
+import TitleDofrontaoend from '../../components/TitleDofrontaoend'
+import VideoDofrontaoend from '../../components/VideoDofrontaoend'
+import FormLead from '../../components/FormLead'
 
 const Home = () => (
     <Wrapper>
@@ -16,7 +16,8 @@ const Home = () => (
         <Section>
             <TitleDofrontaoend>do Front ao End</TitleDofrontaoend>
             <SubtitleCollab>
-                Um guia completo para quem quer se tornar um Desenvolvedor Front End
+                Um guia completo para quem quer se tornar um Desenvolvedor Front
+                End
             </SubtitleCollab>
 
             <VideoDofrontaoend />
@@ -24,6 +25,6 @@ const Home = () => (
             <FormLead />
         </Section>
     </Wrapper>
-);
+)
 
-export default Home;
+export default Home
