@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components'
 
 const Colors = createGlobalStyle`
     :root {
@@ -11,4 +11,4 @@ const Colors = createGlobalStyle`
     }
 `
 
-export default Colors;
+export default Colors

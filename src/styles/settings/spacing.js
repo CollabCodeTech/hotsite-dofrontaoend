@@ -1,5 +1,4 @@
-import { createGlobalStyle } from "styled-components";
-
+import { createGlobalStyle } from 'styled-components'
 
 const Spacing = createGlobalStyle`
     :root {
@@ -14,6 +13,6 @@ const Spacing = createGlobalStyle`
             --spacing-big: 2rem;
         }
     }
-`;
+`
 
-export default Spacing;
+export default Spacing

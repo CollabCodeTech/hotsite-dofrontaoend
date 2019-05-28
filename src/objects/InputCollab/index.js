@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 const InputCollab = styled.input`
     background-color: var(--color-negative-light);
@@ -22,6 +22,6 @@ const InputCollab = styled.input`
     &:hover {
         border: 1px solid var(--color-third);
     }
-`;
+`
 
-export default InputCollab;
+export default InputCollab

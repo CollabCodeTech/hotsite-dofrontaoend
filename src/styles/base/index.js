@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components'
 
 const Base = createGlobalStyle`
     html, body {
@@ -10,6 +10,6 @@ const Base = createGlobalStyle`
         font-family: inherit;
         font-size: inherit;
     }
-`;
+`
 
-export default Base;
+export default Base

@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
-export const Navigation = styled.ol``;
+export const Navigation = styled.ol``
 
 export const Item = styled.li`
     color: var(--color-second);
@@ -10,13 +10,13 @@ export const Item = styled.li`
     &:not(:last-child) {
         margin-bottom: var(--spacing-medium);
     }
-`;
+`
 
 export const Number = styled.span`
     display: inline-block;
     width: 1.2ch;
     text-align: center;
-`;
+`
 
 export const Content = styled.strong`
     font-weight: normal;

@@ -1,8 +1,8 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
-import { Figure } from "../../objects/LogoCollab/styles";
-import CollabCode from "../../objects/CollabCode";
-import { Navigation, Content } from "../NavigationCollab/styles";
+import { Figure } from '../../objects/LogoCollab/styles'
+import CollabCode from '../../objects/CollabCode'
+import { Navigation, Content } from '../NavigationCollab/styles'
 
 export const Header = styled.header`
     background-color: var(--color-zero);
@@ -25,27 +25,25 @@ export const Header = styled.header`
         width: 300px;
     }
 
-    &> ${Navigation} {
+    & > ${Navigation} {
         padding-left: 11px;
         width: 500px;
     }
 
-    &> ${Figure} {
+    & > ${Figure} {
         position: absolute;
         top: var(--spacing-medium);
         width: 500px;
     }
 
-    & ${CollabCode},
-    & ${Content} {
+    & ${CollabCode}, & ${Content} {
         transition: opacity 100ms linear;
         opacity: 0;
     }
 
-    &:hover ${CollabCode},
-    &:hover ${Content} {
+    &:hover ${CollabCode}, &:hover ${Content} {
         transition-duration: 200ms;
         transition-delay: 150ms;
         opacity: 1;
     }
-`;
+`

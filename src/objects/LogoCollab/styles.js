@@ -1,13 +1,11 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
-import AvatarCollab from "../AvatarCollab";
+import AvatarCollab from '../AvatarCollab'
 
 export const Figure = styled.figure`
     height: 42px;
-    
 
-    &> ${AvatarCollab} {
+    & > ${AvatarCollab} {
         margin-right: var(--spacing-small);
     }
-`;
-
+`

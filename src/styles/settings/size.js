@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components'
 
 const Size = createGlobalStyle`
     :root {
@@ -16,7 +16,6 @@ const Size = createGlobalStyle`
             --size-base: 9.8px;
         }
     }
-`;
+`
 
-export default Size;
-
+export default Size
