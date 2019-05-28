@@ -10,6 +10,11 @@ const Reset = createGlobalStyle`
     ol, ul {
         list-style: none;
     }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
 `
 
 export default Reset

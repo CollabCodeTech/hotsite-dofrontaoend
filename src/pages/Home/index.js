@@ -1,30 +1,25 @@
-import React from 'react'
+import React, { useState } from "react";
 
-import { Wrapper, Section } from './styles'
+import { Main } from "./styles";
 
-import SubtitleCollab from '../../objects/SubtitleCollab'
+import HeaderCollab from "../../components/HeaderCollab";
 
-import HeaderCollab from '../../components/HeaderCollab'
-import TitleDofrontaoend from '../../components/TitleDofrontaoend'
-import VideoDofrontaoend from '../../components/VideoDofrontaoend'
-import FormLead from '../../components/FormLead'
+import Lead from "../Lead";
+import Menu from "../Menu";
 
-const Home = () => (
-    <Wrapper>
-        <HeaderCollab />
+const Home = () => {
+    const [active, setActive] = useState();
 
-        <Section>
-            <TitleDofrontaoend>do Front ao End</TitleDofrontaoend>
-            <SubtitleCollab>
-                Um guia completo para quem quer se tornar um Desenvolvedor Front
-                End
-            </SubtitleCollab>
+    const handleClick = key => setActive(key);
 
-            <VideoDofrontaoend />
+    return (
+        <Main>
+            <HeaderCollab handleClick={handleClick} itemActive={active} />
 
-            <FormLead />
-        </Section>
-    </Wrapper>
-)
+            <Lead />
+            <Menu />
+        </Main>
+    );
+};
 
 export default Home

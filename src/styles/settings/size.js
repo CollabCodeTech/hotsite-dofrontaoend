@@ -5,10 +5,11 @@ const Size = createGlobalStyle`
         --radius-small: 4px;
         
         --size-base: 10px;
-        --size-small: 1.5em;
-        --size-medium: 1.8em;
-        --size-big: 2.4em;
-        --size-very-big: 5em;
+        --size-small: 1.5rem;
+        --size-medium: 1.8rem;
+        --size-half-big: 2rem;
+        --size-big: 2.4rem;
+        --size-very-big: 5rem;
     }
 
     @media (max-height: 700px) {
