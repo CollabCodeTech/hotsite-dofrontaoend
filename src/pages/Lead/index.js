@@ -1,19 +1,20 @@
-import React from "react";
+import React from 'react'
 
-import { Wrapper, Section } from "./styles";
+import { Wrapper, Section } from './styles'
 
-import SubtitleCollab from "../../objects/SubtitleCollab";
+import SubtitleCollab from '../../objects/SubtitleCollab'
 
-import TitleDofrontaoend from "../../components/TitleDofrontaoend";
-import VideoDofrontaoend from "../../components/VideoDofrontaoend";
-import FormLead from "../../components/FormLead";
+import TitleDofrontaoend from '../../components/TitleDofrontaoend'
+import VideoDofrontaoend from '../../components/VideoDofrontaoend'
+import FormLead from '../../components/FormLead'
 
 const Lead = () => (
     <Wrapper>
         <Section>
             <TitleDofrontaoend>do Front ao End</TitleDofrontaoend>
             <SubtitleCollab>
-                Um guia completo para quem quer se tornar um Desenvolvedor Front End
+                Um guia completo para quem quer se tornar um Desenvolvedor Front
+                End
             </SubtitleCollab>
 
             <VideoDofrontaoend />
@@ -21,6 +22,6 @@ const Lead = () => (
             <FormLead />
         </Section>
     </Wrapper>
-);
+)
 
-export default Lead;
+export default Lead

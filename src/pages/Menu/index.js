@@ -1,9 +1,7 @@
-import React from "react";
+import React from 'react'
 
-import { Section } from "./styles";
+import { Section } from './styles'
 
-const Menu = () => (
-    <Section id="0" />
-);
+const Menu = () => <Section id="0" />
 
-export default Menu;
+export default Menu

@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 export const Navigation = styled.ol``
 
@@ -23,9 +23,9 @@ export const Content = styled.strong`
     font-size: var(--size-half-big);
     position: relative;
     font-weight: normal;
-    
+
     &::after {
-        content: "";
+        content: '';
         position: absolute;
         bottom: 0;
         left: 0;
@@ -37,29 +37,11 @@ export const Content = styled.strong`
         transition: 200ms transform linear;
     }
 
-    ${({itemActive}) => itemActive && css`
-        &::after {
-            transform: scaleX(1) translateY(100%);
-        }
-    `}
+    ${({ itemActive }) =>
+        itemActive &&
+        css`
+            &::after {
+                transform: scaleX(1) translateY(100%);
+            }
+        `}
 `
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

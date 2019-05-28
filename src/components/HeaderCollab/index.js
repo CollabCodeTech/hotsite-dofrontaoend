@@ -5,7 +5,8 @@ import { Header } from './styles'
 import LogoCollab from '../../objects/LogoCollab'
 import NavigationCollab from '../NavigationCollab'
 
-const HeaderCollab = (props) => {
+const HeaderCollab = props => {
+    const { itemActive } = props
     const items = [
         'Como funciona?',
         'Git e GitHub',
@@ -17,7 +18,7 @@ const HeaderCollab = (props) => {
     ]
 
     return (
-        <Header active={props.itemActive >= 0}>
+        <Header active={itemActive >= 0}>
             <LogoCollab />
 
             <NavigationCollab {...props} items={items} />

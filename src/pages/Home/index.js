@@ -1,16 +1,16 @@
-import React, { useState } from "react";
+import React, { useState } from 'react'
 
-import { Main } from "./styles";
+import { Main } from './styles'
 
-import HeaderCollab from "../../components/HeaderCollab";
+import HeaderCollab from '../../components/HeaderCollab'
 
-import Lead from "../Lead";
-import Menu from "../Menu";
+import Lead from '../Lead'
+import Menu from '../Menu'
 
 const Home = () => {
-    const [active, setActive] = useState();
+    const [active, setActive] = useState()
 
-    const handleClick = key => setActive(key);
+    const handleClick = key => setActive(key)
 
     return (
         <Main>
@@ -19,7 +19,7 @@ const Home = () => {
             <Lead />
             <Menu />
         </Main>
-    );
-};
+    )
+}
 
 export default Home
