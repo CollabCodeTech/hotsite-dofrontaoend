@@ -4,13 +4,13 @@ import { Figure } from '../../objects/LogoCollab/styles'
 import CollabCode from '../../objects/CollabCode'
 import { Navigation, Content } from '../NavigationCollab/styles'
 
-const widthActive = '300px'
-
 export const Header = styled.header`
+    box-sizing: border-box;
     background-color: var(--color-zero);
     overflow: hidden;
     padding: 20px 20px 0;
-    width: ${({ active }) => (active ? widthActive : '40px')};
+    width: ${({ active }) =>
+        active ? 'var(--spacing-active-menu)' : 'var(--spacing-menu)'};
     height: 100vh;
     position: fixed;
     z-index: 1;
@@ -24,18 +24,18 @@ export const Header = styled.header`
     cursor: pointer;
 
     &:hover {
-        width: ${widthActive};
+        width: var(--spacing-active-menu);
     }
 
     & > ${Navigation} {
         padding-left: 11px;
-        width: 500px;
+        width: var(--spacing-active-menu);
     }
 
     & > ${Figure} {
         position: absolute;
         top: var(--spacing-medium);
-        width: 500px;
+        width: var(--spacing-active-menu);
     }
 
     & ${CollabCode}, & ${Content} {

@@ -31,4 +31,5 @@ export const Wrapper = styled.div`
     align-items: center;
     height: 100vh;
     background-color: var(--color-first);
+    padding-left: var(--spacing-menu);
 `
