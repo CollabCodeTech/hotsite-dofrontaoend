@@ -4,6 +4,7 @@ const Base = createGlobalStyle`
     html, body {
         font-size: var(--size-base);
         font-family: 'Roboto Slab', serif;
+        color: var(--color-base);
     }
 
     input {
