@@ -2,6 +2,12 @@ import React from 'react'
 
 import { Section } from './styles'
 
-const Menu = () => <Section id="0" />
+import HeaderContent from '../../components/HeaderContent'
+
+const Menu = () => (
+    <Section id="0">
+        <HeaderContent />
+    </Section>
+)
 
 export default Menu
