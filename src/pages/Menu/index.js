@@ -2,6 +2,8 @@ import React from 'react'
 
 import { Section } from './styles'
 
+import VideoCollab from '../../objects/VideoCollab'
+
 import HeaderContent from '../../components/HeaderContent'
 import ListContent from '../../components/ListContent'
 
@@ -20,6 +22,8 @@ const Menu = () => (
         />
 
         <ListContent items={items} />
+
+        <VideoCollab />
     </Section>
 )
 
