@@ -14,6 +14,7 @@ export const Section = styled.section`
     & > ${SubtitleCollab} {
         width: 500px;
         text-align: center;
+        color: var(--color-zero);
     }
 
     & > ${SubtitleCollab}, & > ${VideoDofrontaoend} {

@@ -2,8 +2,6 @@ import styled from 'styled-components'
 
 export const List = styled.ol`
     font-size: var(--size-medium);
-    padding-top: var(--spacing-big);
-    padding-left: var(--spacing-big);
 `
 
 export const Item = styled.li`

@@ -2,10 +2,9 @@ import React from 'react'
 
 import { Section } from './styles'
 
-import VideoCollab from '../../objects/VideoCollab'
-
 import HeaderContent from '../../components/HeaderContent'
 import ListContent from '../../components/ListContent'
+import VideoAbout from '../../components/VideoAbout'
 
 const items = [
     { number: 1, content: 'Informar' },
@@ -21,9 +20,9 @@ const Menu = () => (
             subtitle="O curso é 100% online e as aulas serão disponibilizadas na nossa plataforma com o método de ensino CollabCode que você pode conhecer no vídeo ao lado."
         />
 
-        <ListContent items={items} />
+        <VideoAbout />
 
-        <VideoCollab />
+        <ListContent items={items} />
     </Section>
 )
 
