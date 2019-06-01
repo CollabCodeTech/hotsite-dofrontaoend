@@ -12,7 +12,7 @@ const Lead = () => (
     <Wrapper>
         <Section>
             <TitleDofrontaoend>do Front ao End</TitleDofrontaoend>
-            <SubtitleCollab>
+            <SubtitleCollab featered>
                 Um guia completo para quem quer se tornar um Desenvolvedor Front
                 End
             </SubtitleCollab>

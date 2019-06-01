@@ -14,6 +14,7 @@ export const Section = styled.section`
     & > ${SubtitleCollab} {
         width: 500px;
         text-align: center;
+        color: var(--color-zero);
     }
 
     & > ${SubtitleCollab}, & > ${VideoDofrontaoend} {
@@ -31,4 +32,5 @@ export const Wrapper = styled.div`
     align-items: center;
     height: 100vh;
     background-color: var(--color-first);
+    padding-left: var(--spacing-menu);
 `

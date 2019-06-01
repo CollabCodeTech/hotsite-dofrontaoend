@@ -5,6 +5,12 @@ const Spacing = createGlobalStyle`
         --spacing-small: 1rem;
         --spacing-medium: 2rem;
         --spacing-big: 4rem;
+        --spacing-very-big: 5rem;
+
+        --spacing-menu: 80px;
+        --spacing-active-menu: 340px;
+
+        --spacing-page-menu: 10vw;
     }
 
     @media (max-height: 700px) {

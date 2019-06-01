@@ -3,9 +3,6 @@ import styled, { css } from 'styled-components'
 const BtnCollab = styled.button.attrs({
     type: 'submit'
 })`
-    position: absolute;
-    right: 0;
-    bottom: 0;
     box-sizing: border-box;
     background-color: var(--color-zero);
     width: ${({ loading }) => (loading ? '100%' : '140px')};
