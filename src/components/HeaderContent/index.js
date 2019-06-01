@@ -14,6 +14,7 @@ const HeaderContent = ({ title, subtitle }) => (
             <LinkCollab>Depoimentos</LinkCollab>
             <BtnCollab>Inscrever-se</BtnCollab>
         </Actions>
+
         <TitleCollab>{title}</TitleCollab>
         <SubtitleCollab>{subtitle}</SubtitleCollab>
     </Header>

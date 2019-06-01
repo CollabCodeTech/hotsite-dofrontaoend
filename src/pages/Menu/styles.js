@@ -11,6 +11,8 @@ export const Section = styled.section`
     height: 100vh;
     background-color: var(--color-third);
     padding-left: var(--spacing-active-menu);
+    transition: opacity 400ms linear;
+    opacity: ${({ active }) => (active ? '1' : '0')};
 
     & > ${VideoWrapper} {
         float: right;
