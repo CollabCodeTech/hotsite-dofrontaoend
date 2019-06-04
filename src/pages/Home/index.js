@@ -6,6 +6,7 @@ import HeaderCollab from '../../components/HeaderCollab'
 
 import Lead from '../Lead'
 import Menu from '../Menu'
+import Testimonial from '../Testimonial'
 
 const menus = [
     {
@@ -61,6 +62,7 @@ const Home = () => {
                     />
                 ))}
             </Wrapper>
+            <Testimonial />
         </Main>
     )
 }
