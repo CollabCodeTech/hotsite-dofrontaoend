@@ -48,4 +48,17 @@ export const Header = styled.header`
         transition-delay: 150ms;
         opacity: 1;
     }
+
+    @media (max-width: 770px) {
+        width: 100vw;
+        height: 70px;
+
+        &:hover {
+            width: 100vw;
+        }
+
+        &:hover ${CollabCode} {
+            opacity: 0;
+        }
+    }
 `
