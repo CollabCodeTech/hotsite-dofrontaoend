@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+import { center } from '../../styles/tools/functions'
+
 import SubtitleCollab from '../../objects/SubtitleCollab'
 import VideoDofrontaoend from '../../components/VideoDofrontaoend'
 import { Form } from '../../components/FormLead/styles'
@@ -27,10 +29,5 @@ export const Section = styled.section`
 `
 
 export const Wrapper = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: var(--color-first);
-    padding-left: var(--spacing-menu);
+    ${center}
 `
