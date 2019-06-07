@@ -52,9 +52,31 @@ export const Header = styled.header`
     @media (max-width: 770px) {
         width: 100vw;
         height: 70px;
+        overflow: visible;
 
         &:hover {
             width: 100vw;
+        }
+
+        &:hover > ${Navigation} {
+            transform: translateX(0);
+        }
+
+        & > ${Navigation} {
+            background-color: var(--color-zero);
+            height: calc(100vh - 70px);
+            width: 100vw;
+            padding-top: var(--spacing-big);
+            padding-left: var(--spacing-medium);
+            position: fixed;
+            top: 70px;
+            left: 0;
+            transform: translateX(100%);
+            transition: transform 400ms linear;
+        }
+
+        & ${Content} {
+            opacity: 1;
         }
 
         &:hover ${CollabCode} {
