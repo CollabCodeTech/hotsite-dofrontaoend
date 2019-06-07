@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import { Header } from './styles'
 
@@ -8,6 +8,7 @@ import IconMenu from '../IconMenu'
 
 const HeaderCollab = props => {
     const { itemActive } = props
+    const [menuActive, setMenuActive] = useState(false)
     const items = [
         'Como funciona?',
         'Git e GitHub',
@@ -18,13 +19,17 @@ const HeaderCollab = props => {
         'User Experience'
     ]
 
+    const handleClick = () => {
+        setMenuActive(old => !old)
+    }
+
     return (
-        <Header active={itemActive >= 0}>
+        <Header active={itemActive >= 0} menuActive={menuActive}>
             <LogoCollab />
 
-            <IconMenu />
+            <IconMenu href="#navigation" onClick={handleClick} />
 
-            <NavigationCollab {...props} items={items} />
+            <NavigationCollab id="navigation" {...props} items={items} />
         </Header>
     )
 }

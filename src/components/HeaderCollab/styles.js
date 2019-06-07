@@ -66,10 +66,6 @@ export const Header = styled.header`
             right: var(--spacing-medium);
         }
 
-        &:hover > ${Navigation} {
-            transform: translateX(0);
-        }
-
         & > ${Navigation} {
             background-color: var(--color-zero);
             height: calc(100vh - 70px);
@@ -79,7 +75,8 @@ export const Header = styled.header`
             position: fixed;
             top: 70px;
             left: 0;
-            transform: translateX(100%);
+            transform: ${({ menuActive }) =>
+                menuActive ? 'translateX(0)' : 'translateX(100%)'};
             transition: transform 400ms linear;
         }
 

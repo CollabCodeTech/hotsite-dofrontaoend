@@ -15,8 +15,8 @@ const Testimonial = () => (
         />
 
         <Testimonials>
-            {students.map(student => (
-                <VideoTestimonial name={student} />
+            {students.map((student, key) => (
+                <VideoTestimonial key={key} name={student} />
             ))}
         </Testimonials>
     </Wrapper>

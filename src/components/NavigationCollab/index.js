@@ -2,8 +2,8 @@ import React from 'react'
 
 import { Navigation, Item, Number, Content } from './styles'
 
-const NavigationCollab = ({ handleClick, items, itemActive }) => (
-    <Navigation>
+const NavigationCollab = ({ id, handleClick, items, itemActive }) => (
+    <Navigation id={id}>
         {items.map((content, key) => (
             <Item key={key} onClick={() => handleClick(key)}>
                 <a href={`#${key}`}>

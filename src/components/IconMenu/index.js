@@ -2,8 +2,8 @@ import React from 'react'
 
 import { Menu, Draw } from './styles'
 
-const IconMenu = () => (
-    <Menu>
+const IconMenu = props => (
+    <Menu {...props}>
         <Draw />
     </Menu>
 )
