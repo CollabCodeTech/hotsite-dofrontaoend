@@ -2,11 +2,16 @@ import styled from 'styled-components'
 
 import { Section as Menu } from '../Menu/styles'
 
-export const Main = styled.main``
+export const Main = styled.main`
+    position: relative;
+    overflow: hidden;
+`
 
 export const Wrapper = styled.div`
     & > ${Menu} {
+        box-sizing: border-box;
         position: absolute;
-        width: calc(100vw - var(--spacing-active-menu));
+        width: 100vw;
+        padding-left: var(--spacing-active-menu);
     }
 `
