@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { Figure } from '../../objects/LogoCollab/styles'
 import CollabCode from '../../objects/CollabCode'
 import { Navigation, Content } from '../NavigationCollab/styles'
+import { Menu } from '../IconMenu/styles'
 
 export const Header = styled.header`
     box-sizing: border-box;
@@ -57,6 +58,12 @@ export const Header = styled.header`
 
         &:hover {
             width: 100vw;
+        }
+
+        & > ${Menu} {
+            position: absolute;
+            top: var(--spacing-medium);
+            right: var(--spacing-medium);
         }
 
         &:hover > ${Navigation} {

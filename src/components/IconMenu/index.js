@@ -1,7 +1,11 @@
 import React from 'react'
 
-import { Menu } from './styles'
+import { Menu, Draw } from './styles'
 
-const IconMenu = () => <Menu>Vai</Menu>
+const IconMenu = () => (
+    <Menu>
+        <Draw />
+    </Menu>
+)
 
 export default IconMenu
