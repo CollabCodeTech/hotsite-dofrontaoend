@@ -62,7 +62,7 @@ export const Section = styled.section`
         }
     }
 
-    @media (max-width: 334px) {
+    @media (max-width: 330px) {
         & > ${Title} {
             font-size: 26px;
         }
