@@ -4,6 +4,7 @@ import { Header } from './styles'
 
 import LogoCollab from '../../objects/LogoCollab'
 import NavigationCollab from '../NavigationCollab'
+import IconMenu from '../IconMenu'
 
 const HeaderCollab = props => {
     const { itemActive } = props
@@ -20,6 +21,8 @@ const HeaderCollab = props => {
     return (
         <Header active={itemActive >= 0}>
             <LogoCollab />
+
+            <IconMenu />
 
             <NavigationCollab {...props} items={items} />
         </Header>
