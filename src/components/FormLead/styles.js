@@ -22,4 +22,18 @@ export const Form = styled.form`
         right: 0;
         bottom: 0;
     }
+
+    @media (max-width: 600px) {
+        & > ${InputCollab} {
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin-bottom: var(--spacing-small);
+        }
+
+        & > ${BtnCollab} {
+            position: static;
+            width: 100%;
+        }
+    }
 `

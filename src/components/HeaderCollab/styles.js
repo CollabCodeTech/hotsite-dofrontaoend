@@ -53,6 +53,7 @@ export const Header = styled.header`
         width: 100vw;
         height: 70px;
         overflow: visible;
+        transition: none;
 
         &:hover {
             width: 100vw;
@@ -79,7 +80,7 @@ export const Header = styled.header`
             opacity: 1;
         }
 
-        &:hover ${CollabCode} {
+        &:hover ${CollabCode}, & ${CollabCode} {
             opacity: 0;
         }
     }
