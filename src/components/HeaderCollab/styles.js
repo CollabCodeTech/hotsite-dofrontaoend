@@ -28,6 +28,10 @@ export const Header = styled.header`
         width: var(--spacing-active-menu);
     }
 
+    & > ${Menu} {
+        display: none;
+    }
+
     & > ${Navigation} {
         padding-left: 11px;
         width: var(--spacing-active-menu);
@@ -61,6 +65,7 @@ export const Header = styled.header`
         }
 
         & > ${Menu} {
+            display: block;
             position: absolute;
             top: var(--spacing-medium);
             right: var(--spacing-medium);
