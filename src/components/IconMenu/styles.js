@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Menu = styled.a`
     display: block;
-    height: 34px;
+    height: 42px;
     width: 40px;
     position: relative;
 `

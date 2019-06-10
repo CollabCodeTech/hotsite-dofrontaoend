@@ -9,7 +9,7 @@ export const Header = styled.header`
     box-sizing: border-box;
     background-color: var(--color-zero);
     overflow: hidden;
-    padding: 20px 20px 0;
+    padding: var(--spacing-medium) var(--spacing-medium) 0;
     width: ${({ active }) =>
         active ? 'var(--spacing-active-menu)' : 'var(--spacing-menu)'};
     height: 100vh;
@@ -56,7 +56,7 @@ export const Header = styled.header`
 
     @media (max-width: 770px) {
         width: 100vw;
-        height: 70px;
+        height: 82px;
         overflow: visible;
         transition: none;
 

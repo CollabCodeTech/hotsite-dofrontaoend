@@ -15,6 +15,11 @@ export const Section = styled.section`
     width: 60%;
     min-width: 545px;
 
+    @media (max-height: 860px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     & > ${SubtitleCollab} {
         width: 500px;
         text-align: center;
@@ -78,8 +83,8 @@ export const Wrapper = styled.div`
         padding-left: 0;
     }
 
-    @media (max-height: 820px) {
+    @media (max-height: 860px) {
         display: block;
-        padding-top: calc(70px + var(--spacing-big));
+        padding-top: 120px;
     }
 `
