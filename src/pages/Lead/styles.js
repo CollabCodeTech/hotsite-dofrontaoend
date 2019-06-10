@@ -77,4 +77,9 @@ export const Wrapper = styled.div`
         padding-top: 70px
         padding-left: 0;
     }
+
+    @media (max-height: 820px) {
+        display: block;
+        padding-top: calc(70px + var(--spacing-big));
+    }
 `
