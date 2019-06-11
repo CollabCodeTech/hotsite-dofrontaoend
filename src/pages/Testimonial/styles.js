@@ -9,6 +9,7 @@ export const Wrapper = styled.section`
     padding-right: var(--spacing-page-menu);
 
     @media (max-width: 770px) {
+        height: auto;
         padding: var(--spacing-over-big) var(--spacing-medium) 0;
     }
 

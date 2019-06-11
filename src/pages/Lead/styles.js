@@ -79,8 +79,9 @@ export const Wrapper = styled.div`
 
     @media (max-width: 770px) {
         box-sizing: border-box;
-        padding-top: 70px
+        padding-top: var(--spacing-over-big);
         padding-left: 0;
+        height: auto;
     }
 
     @media (max-height: 860px) {
