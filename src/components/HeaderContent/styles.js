@@ -16,9 +16,7 @@ export const Actions = styled.nav`
 export const Header = styled.header`
     height: 255px;
     background-color: var(--color-first);
-    padding: var(--spacing-medium) var(--spacing-page-menu) 0 var(--spacing-big);
-    padding-top: var(--spacing-medium);
-    padding-right: var(--spacing-page-menu);
+    padding: var(--spacing-medium) 0 0 var(--spacing-big);
 
     & > ${TitleCollab} {
         margin-bottom: var(--spacing-small);

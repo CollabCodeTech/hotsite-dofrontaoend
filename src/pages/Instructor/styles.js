@@ -19,6 +19,7 @@ export const Wrapper = styled.div`
     }
 
     @media (max-height: 780px) {
+        padding-top: var(--spacing-over-big);
         height: auto;
     }
 `

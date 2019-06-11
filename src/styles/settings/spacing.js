@@ -7,6 +7,8 @@ const Spacing = createGlobalStyle`
         --spacing-big: 4rem;
         --spacing-very-big: 5rem;
 
+        --spacing-over-big: 120px;
+
         --spacing-menu: 80px;
         --spacing-active-menu: 340px;
 

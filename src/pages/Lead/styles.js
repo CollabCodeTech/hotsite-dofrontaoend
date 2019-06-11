@@ -85,7 +85,7 @@ export const Wrapper = styled.div`
 
     @media (max-height: 860px) {
         display: block;
-        padding-top: 120px;
+        padding-top: var(--spacing-over-big);
     }
 
     @media (max-height: 780px) {
