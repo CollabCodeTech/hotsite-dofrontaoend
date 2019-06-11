@@ -7,6 +7,10 @@ export const Wrapper = styled.section`
     background-color: var(--color-first);
     padding-left: var(--spacing-menu);
     padding-right: var(--spacing-page-menu);
+
+    @media (max-height: 780px) {
+        height: auto;
+    }
 `
 
 export const Testimonials = styled.div`

@@ -17,4 +17,8 @@ export const Wrapper = styled.div`
     & > ${TextCollab} {
         max-width: 40%;
     }
+
+    @media (max-height: 780px) {
+        height: auto;
+    }
 `

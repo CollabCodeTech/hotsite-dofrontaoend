@@ -87,4 +87,8 @@ export const Wrapper = styled.div`
         display: block;
         padding-top: 120px;
     }
+
+    @media (max-height: 780px) {
+        height: auto;
+    }
 `
