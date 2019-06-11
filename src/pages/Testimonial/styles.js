@@ -8,6 +8,10 @@ export const Wrapper = styled.section`
     padding-left: var(--spacing-menu);
     padding-right: var(--spacing-page-menu);
 
+    @media (max-width: 770px) {
+        padding: var(--spacing-over-big) var(--spacing-medium) 0;
+    }
+
     @media (max-height: 780px) {
         padding-top: var(--spacing-over-big);
         height: auto;
@@ -17,10 +21,14 @@ export const Wrapper = styled.section`
 export const Testimonials = styled.div`
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-left: var(--spacing-big);
 
     & ${Video} {
-        margin-bottom: var(--spacing-big);
+        margin: 0 var(--spacing-small) var(--spacing-big);
+    }
+
+    @media (max-width: 770px) {
+        padding: 0;
     }
 `
