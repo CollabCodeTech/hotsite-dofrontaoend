@@ -70,6 +70,10 @@ export const Header = styled.header`
             position: static;
         }
 
+        & ${CollabCode} {
+            display: none;
+        }
+
         & > ${BtnCollab}, & > ${Menu} {
             display: block;
             flex-shrink: 0;
@@ -100,6 +104,23 @@ export const Header = styled.header`
 
         &:hover ${CollabCode}, & ${CollabCode} {
             opacity: 0;
+        }
+    }
+
+    @media (max-width: 350px) {
+        & > ${BtnCollab} {
+            background-color: var(--color-zero);
+            color: var(--color-first);
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100vw;
+            height: 50px;
+            border-radius: 0;
+            box-shadow: 0 -4px 2px var(--color-negative-light);
+        }
+        & > ${BtnCollab}:hover {
+            transform: none;
         }
     }
 `
