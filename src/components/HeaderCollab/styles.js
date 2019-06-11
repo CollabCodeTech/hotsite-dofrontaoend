@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { Figure } from '../../objects/LogoCollab/styles'
 import CollabCode from '../../objects/CollabCode'
 import { Navigation, Content } from '../NavigationCollab/styles'
+import BtnCollab from '../BtnCollab'
 import { Menu } from '../IconMenu/styles'
 
 export const Header = styled.header`
@@ -28,7 +29,7 @@ export const Header = styled.header`
         width: var(--spacing-active-menu);
     }
 
-    & > ${Menu} {
+    & > ${BtnCollab}, & > ${Menu} {
         display: none;
     }
 
@@ -59,16 +60,24 @@ export const Header = styled.header`
         height: 82px;
         overflow: visible;
         transition: none;
+        flex-direction: row;
 
         &:hover {
             width: 100vw;
         }
 
-        & > ${Menu} {
+        & > ${Figure} {
+            position: static;
+        }
+
+        & > ${BtnCollab}, & > ${Menu} {
             display: block;
-            position: absolute;
-            top: var(--spacing-medium);
-            right: var(--spacing-medium);
+            flex-shrink: 0;
+        }
+
+        & > ${BtnCollab} {
+            height: 42px;
+            margin-right: var(--spacing-medium);
         }
 
         & > ${Navigation} {

@@ -4,6 +4,7 @@ import { Header } from './styles'
 
 import LogoCollab from '../../objects/LogoCollab'
 import NavigationCollab from '../NavigationCollab'
+import BtnCollab from '../BtnCollab'
 import IconMenu from '../IconMenu'
 
 const HeaderCollab = props => {
@@ -26,6 +27,8 @@ const HeaderCollab = props => {
     return (
         <Header active={itemActive >= 0} menuActive={menuActive}>
             <LogoCollab />
+
+            <BtnCollab featured>Pré-inscrição</BtnCollab>
 
             <IconMenu href="#navigation" onClick={handleClick} />
 

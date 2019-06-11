@@ -4,11 +4,13 @@ const BtnCollab = styled.button.attrs({
     type: 'submit'
 })`
     box-sizing: border-box;
-    background-color: var(--color-zero);
+    background-color: ${({ featured }) =>
+        featured ? 'var(--color-first)' : 'var(--color-zero)'};
     width: ${({ loading }) => (loading ? '100%' : '140px')};
     height: 40px;
     border-radius: var(--radius-small);
-    color: var(--color-first);
+    color: ${({ featured }) =>
+        featured ? 'var(--color-zero)' : 'var(--color-first)'};
     font-weight: bold;
     font-size: var(--size-small);
     box-shadow: 0px 0px 0px var(--color-base);
