@@ -15,11 +15,20 @@ export const Wrapper = styled.div`
     }
 
     & > ${TextCollab} {
-        max-width: 40%;
+        width: 732px;
+    }
+
+    @media (max-width: 900px) {
+        & > ${TextCollab} {
+            width: auto;
+            padding-left: var(--spacing-medium);
+            padding-right: var(--spacing-medium);
+        }
     }
 
     @media (max-width: 770px) {
         height: auto;
+        padding-left: 0;
     }
 
     @media (max-height: 780px) {
