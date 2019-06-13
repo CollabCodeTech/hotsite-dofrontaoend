@@ -12,9 +12,9 @@ const Lead = () => (
     <Wrapper>
         <Section>
             <TitleDofrontaoend>do Front ao End</TitleDofrontaoend>
-            <SubtitleCollab featered>
-                Um guia completo para quem quer se tornar um Desenvolvedor Front
-                End
+            <SubtitleCollab featured>
+                A Semana Do Front ao End acontece XX/XX até XX/XX é um evento
+                100% gratuito e ao vivo, focado para quem quer ser Dev FrontEnd
             </SubtitleCollab>
 
             <VideoDofrontaoend />

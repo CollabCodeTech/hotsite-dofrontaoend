@@ -7,6 +7,7 @@ import BtnCollab from '../BtnCollab'
 
 export const Form = styled.form`
     position: relative;
+    max-width: 450px;
 
     & > ${TextCollab} {
         margin-bottom: var(--spacing-small);

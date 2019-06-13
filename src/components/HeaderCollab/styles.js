@@ -15,7 +15,7 @@ export const Header = styled.header`
         active ? 'var(--spacing-active-menu)' : 'var(--spacing-menu)'};
     height: 100vh;
     position: fixed;
-    z-index: 1;
+    z-index: 10;
     top: 0;
     left: 0;
     display: flex;
@@ -55,12 +55,21 @@ export const Header = styled.header`
         opacity: 1;
     }
 
+    @media (max-width: 1140px) {
+        width: var(--spacing-menu);
+
+        & ${CollabCode}, & ${Content} {
+            opacity: 0;
+        }
+    }
+
     @media (max-width: 770px) {
         width: 100vw;
         height: 82px;
         overflow: visible;
         transition: none;
         flex-direction: row;
+        box-shadow: 0 4px 2px var(--color-negative-light);
 
         &:hover {
             width: 100vw;

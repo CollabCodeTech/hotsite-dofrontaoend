@@ -7,13 +7,14 @@ import TextCollab from '../../objects/TextCollab'
 
 const FormLead = () => {
     const [loading, setLoading] = useState(false)
-    const [content, setContent] = useState('Receber')
+    const [content, setContent] = useState('Pré-inscrição')
 
     return (
         <Form>
             <TextCollab>
-                Quer receber novidades da próxima turma, só colocar seu email
-                abaixo.
+                Faça sua pré-inscrição e garanta sua vaga para Semana Do Front
+                ao End! Sem a pré-inscrição você não poderá ter acesso aos
+                vídeos depois que a semana acabar.
             </TextCollab>
 
             <InputCollab placeholder="Nome" />

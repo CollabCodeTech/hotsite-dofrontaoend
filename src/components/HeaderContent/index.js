@@ -8,8 +8,8 @@ import SubtitleCollab from '../../objects/SubtitleCollab'
 
 import BtnCollab from '../BtnCollab'
 
-const HeaderContent = ({ title, subtitle }) => (
-    <Header>
+const HeaderContent = ({ title, subtitle, menu = false }) => (
+    <Header menu={menu}>
         <Actions>
             <LinkCollab>Depoimentos</LinkCollab>
             <BtnCollab>Inscrever-se</BtnCollab>

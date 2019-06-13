@@ -30,6 +30,7 @@ export const Header = styled.header`
     height: 255px;
     background-color: var(--color-first);
     padding: var(--spacing-medium) 0 0 var(--spacing-big);
+    ${({ menu }) => menu && 'padding-right: var(--spacing-page-menu)'};
 
     & > ${TitleCollab} {
         margin-bottom: var(--spacing-small);
@@ -41,5 +42,7 @@ export const Header = styled.header`
 
     @media (max-width: 770px) {
         padding: 0;
+        height: auto;
+        margin-bottom: var(--spacing-big);
     }
 `

@@ -12,7 +12,7 @@ const Spacing = createGlobalStyle`
         --spacing-menu: 80px;
         --spacing-active-menu: 340px;
 
-        --spacing-page-menu: 10vw;
+        --spacing-page-menu: 5vw;
     }
 
     @media (max-height: 700px) {

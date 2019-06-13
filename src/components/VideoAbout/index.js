@@ -9,7 +9,7 @@ import TextCollab from '../../objects/TextCollab'
 const VideoAbout = () => (
     <Wrapper>
         <VideoCollab />
-        <Subtitle featered>Sobre o modulo</Subtitle>
+        <Subtitle featured>Sobre o modulo</Subtitle>
         <TextCollab>
             {`Lorem Ipsum is simply dummy text of the printing and typesetting
 industry. Lorem Ipsum has been the industry's standard dummy text

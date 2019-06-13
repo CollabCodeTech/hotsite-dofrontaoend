@@ -3,10 +3,10 @@ import styled from 'styled-components'
 import { Wrapper as Video } from '../../components/VideoTestimonial/styles'
 
 export const Wrapper = styled.section`
+    box-sizing: border-box;
     height: 100vh;
     background-color: var(--color-first);
-    padding-left: var(--spacing-menu);
-    padding-right: var(--spacing-page-menu);
+    padding: var(--spacing-big) var(--spacing-page-menu) 0 var(--spacing-menu);
 
     @media (max-width: 770px) {
         height: auto;

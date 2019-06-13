@@ -8,6 +8,10 @@ import { Wrapper as VideoWrapper } from '../../components/VideoAbout/styles'
 import { List } from '../../components/ListContent/styles'
 
 export const Section = styled.section`
+    box-sizing: border-box;
+    position: ${({ active }) => (active ? 'static' : 'absolute')};
+    z-index: 1;
+    width: 100vw;
     height: 100vh;
     background-color: var(--color-third);
     padding-left: var(--spacing-active-menu);
@@ -55,5 +59,9 @@ export const Section = styled.section`
                 text-align: left;
             }
         }
+    }
+
+    @media (max-width: 1140px) {
+        padding-left: var(--spacing-menu);
     }
 `
