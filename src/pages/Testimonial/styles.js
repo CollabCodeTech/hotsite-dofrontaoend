@@ -10,11 +10,10 @@ export const Wrapper = styled.section`
 
     @media (max-width: 770px) {
         height: auto;
-        padding: var(--spacing-over-big) var(--spacing-medium) 0;
+        padding: var(--spacing-very-big) var(--spacing-medium) 0;
     }
 
     @media (max-height: 780px) {
-        padding-top: var(--spacing-over-big);
         height: auto;
     }
 `

@@ -8,7 +8,7 @@ import VideoAbout from '../../components/VideoAbout'
 
 const Menu = ({ id, title, subtitle, items, active }) => (
     <Section id={id} active={active}>
-        <HeaderContent title={title} subtitle={subtitle} menu />
+        <HeaderContent title={title} subtitle={subtitle} menu mobile />
 
         <VideoAbout />
 

@@ -79,8 +79,7 @@ export const Wrapper = styled.div`
 
     @media (max-width: 770px) {
         box-sizing: border-box;
-        padding-top: var(--spacing-over-big);
-        padding-left: 0;
+        padding: var(--spacing-over-big) 0;
         height: auto;
     }
 
@@ -91,5 +90,6 @@ export const Wrapper = styled.div`
 
     @media (max-height: 780px) {
         height: auto;
+        padding-bottom: var(--spacing-over-big);
     }
 `

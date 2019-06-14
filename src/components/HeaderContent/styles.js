@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 import TitleCollab from '../../objects/TitleCollab'
 import SubtitleCollab from '../../objects/SubtitleCollab'
@@ -41,8 +41,14 @@ export const Header = styled.header`
     }
 
     @media (max-width: 770px) {
-        padding: 0;
+        padding: 0 0 var(--spacing-big);
         height: auto;
         margin-bottom: var(--spacing-big);
+        ${({ mobile }) =>
+            mobile &&
+            css`
+                padding-left: var(--spacing-medium);
+                padding-right: var(--spacing-medium);
+            `};
     }
 `

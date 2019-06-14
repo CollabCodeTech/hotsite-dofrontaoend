@@ -64,4 +64,27 @@ export const Section = styled.section`
     @media (max-width: 1140px) {
         padding-left: var(--spacing-menu);
     }
+
+    @media (max-width: 770px) {
+        padding-left: 0;
+        padding-bottom: var(--spacing-very-big);
+        text-align: left;
+
+        & > ${VideoWrapper}, & > ${List} {
+            padding: 0 var(--spacing-medium);
+        }
+
+        & > ${VideoWrapper} {
+            transform: none;
+            margin-bottom: var(--spacing-medium);
+        }
+
+        & ${Video} {
+            display: none;
+        }
+
+        & ${TextCollab} {
+            width: auto;
+        }
+    }
 `
