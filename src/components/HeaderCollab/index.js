@@ -20,7 +20,11 @@ const HeaderCollab = props => {
         'User Experience'
     ]
 
-    const handleClick = () => {
+    const handleMenuClick = () => {
+        setMenuActive(old => !old)
+    }
+
+    const handleClickNavigation = () => {
         setMenuActive(old => !old)
     }
 
@@ -30,9 +34,14 @@ const HeaderCollab = props => {
 
             <BtnCollab featured>Pré-inscrição</BtnCollab>
 
-            <IconMenu href="#navigation" onClick={handleClick} />
+            <IconMenu href="#navigation" onClick={handleMenuClick} />
 
-            <NavigationCollab id="navigation" {...props} items={items} />
+            <NavigationCollab
+                id="navigation"
+                {...props}
+                items={items}
+                onClick={handleClickNavigation}
+            />
         </Header>
     )
 }

@@ -31,6 +31,10 @@ export const Wrapper = styled.div`
         padding: var(--spacing-over-big) 0 var(--spacing-very-big);
     }
 
+    @media (max-width: 350px) {
+        padding-bottom: var(--spacing-over-big);
+    }
+
     @media (max-height: 780px) {
         padding-top: var(--spacing-over-big);
         padding-bottom: var(--spacing-very-big);
