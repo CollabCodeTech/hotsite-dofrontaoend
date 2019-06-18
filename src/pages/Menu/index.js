@@ -1,18 +1,26 @@
 import React from 'react'
 
-import { Section } from './styles'
+import { Section, Wrapper } from './styles'
 
 import HeaderContent from '../../components/HeaderContent'
 import ListContent from '../../components/ListContent'
 import VideoAbout from '../../components/VideoAbout'
 
-const Menu = ({ id, title, subtitle, items, active }) => (
-    <Section id={id} active={active}>
-        <HeaderContent title={title} subtitle={subtitle} menu mobile />
+const Menu = ({ id, title, subtitle, items, active, preloadActive, myRef }) => (
+    <Section id={id} active={active} ref={myRef} preloadActive={preloadActive}>
+        <HeaderContent
+            title={title}
+            subtitle={subtitle}
+            menu
+            mobile
+            active={active}
+        />
 
-        <VideoAbout />
+        <Wrapper preloadActive={preloadActive}>
+            <VideoAbout />
 
-        <ListContent items={items} />
+            <ListContent items={items} />
+        </Wrapper>
     </Section>
 )
 

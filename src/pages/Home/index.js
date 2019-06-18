@@ -12,6 +12,7 @@ import Instructor from '../Instructor'
 const menus = [
     {
         id: 0,
+        active: false,
         title: 'Como funciona o curso?',
         subtitle:
             'O curso é 100% online e as aulas serão disponibilizadas na nossa plataforma com o método de ensino CollabCode que você pode conhecer no vídeo ao lado.',
@@ -24,6 +25,7 @@ const menus = [
     },
     {
         id: 1,
+        active: false,
         title: 'Git & GitHub',
         subtitle:
             'Esta ementa não define a ordem cronológica do curso, apenas separei em tópicos para facilitar a leitura.',
@@ -43,8 +45,16 @@ const menus = [
 
 const Home = () => {
     const [active, setActive] = useState()
+    let refsMenu = []
 
-    const handleClick = key => setActive(key)
+    const handleClick = (event, key) => {
+        event.preventDefault()
+        setActive(key)
+        refsMenu[key].current.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        })
+    }
 
     return (
         <Main>
@@ -52,16 +62,23 @@ const Home = () => {
 
             <Lead />
             <Wrapper>
-                {menus.map(menu => (
-                    <Menu
-                        key={menu.id}
-                        id={menu.id}
-                        title={menu.title}
-                        subtitle={menu.subtitle}
-                        items={menu.items}
-                        active={active === menu.id}
-                    />
-                ))}
+                {menus.map(menu => {
+                    const myRef = React.createRef()
+                    refsMenu = [...refsMenu, myRef]
+
+                    return (
+                        <Menu
+                            myRef={myRef}
+                            key={menu.id}
+                            id={menu.id}
+                            title={menu.title}
+                            subtitle={menu.subtitle}
+                            items={menu.items}
+                            preloadActive={menu.preloadActive}
+                            active={active === menu.id}
+                        />
+                    )
+                })}
             </Wrapper>
             <Testimonial />
             <Instructor />

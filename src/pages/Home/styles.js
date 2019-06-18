@@ -5,4 +5,6 @@ export const Main = styled.main`
     overflow: hidden;
 `
 
-export const Wrapper = styled.div``
+export const Wrapper = styled.div`
+    position: relative;
+`

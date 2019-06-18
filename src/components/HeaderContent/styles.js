@@ -29,7 +29,12 @@ export const Actions = styled.nav`
 export const Header = styled.header`
     height: 255px;
     background-color: var(--color-first);
-    padding: var(--spacing-medium) 0 0 var(--spacing-big);
+    padding: var(--spacing-medium) 0 0
+        calc(
+            var(--spacing-big) +
+                ${({ active }) =>
+                    active ? 'var(--spacing-active-menu)' : '0px'}
+        );
     ${({ menu }) => menu && 'padding-right: var(--spacing-page-menu)'};
 
     & > ${TitleCollab} {

@@ -7,23 +7,29 @@ import { Header } from '../../components/HeaderContent/styles'
 import { Wrapper as VideoWrapper } from '../../components/VideoAbout/styles'
 import { List } from '../../components/ListContent/styles'
 
+export const Wrapper = styled.div`
+    padding-left: ${({ preloadActive }) =>
+        preloadActive ? 'var(--spacing-active-menu)' : 'var(--spacing-menu)'};
+`
+
 export const Section = styled.section`
     box-sizing: border-box;
     position: ${({ active }) => (active ? 'static' : 'absolute')};
+    top: 0;
+    left: 0;
     z-index: 1;
     width: 100vw;
     height: 100vh;
     background-color: var(--color-third);
-    padding-left: var(--spacing-active-menu);
     transition: opacity 400ms linear;
     opacity: ${({ active }) => (active ? '1' : '0')};
 
-    & > ${VideoWrapper} {
+    & ${VideoWrapper} {
         float: right;
         transform: translateY(calc(var(--spacing-very-big) * -1));
     }
 
-    & > ${List} {
+    & ${List} {
         padding-top: var(--spacing-big);
         padding-left: var(--spacing-big);
     }
@@ -31,7 +37,7 @@ export const Section = styled.section`
     @media (max-width: 1330px) {
         height: auto;
 
-        & > ${VideoWrapper} {
+        & ${VideoWrapper} {
             float: none;
             transform: translateY(calc(var(--spacing-big) * -1));
         }
@@ -52,7 +58,7 @@ export const Section = styled.section`
                 display: inline-block;
             }
 
-            & > ${List} {
+            & ${List} {
                 display: inline-block;
                 padding-left: 0;
                 width: 528px;
@@ -62,19 +68,24 @@ export const Section = styled.section`
     }
 
     @media (max-width: 1140px) {
-        padding-left: var(--spacing-menu);
+        & > ${Wrapper} {
+            padding-left: var(--spacing-menu);
+        }
+        & > ${Header} {
+            padding-left: calc(var(--spacing-menu) + var(--spacing-big));
+        }
     }
 
     @media (max-width: 770px) {
-        padding-left: 0;
         padding-bottom: var(--spacing-very-big);
         text-align: left;
 
-        & > ${VideoWrapper}, & > ${List} {
-            padding: 0 var(--spacing-medium);
+        & > ${Wrapper}, & > ${Header} {
+            padding-left: var(--spacing-medium);
+            padding-right: var(--spacing-medium);
         }
 
-        & > ${VideoWrapper} {
+        & ${VideoWrapper} {
             transform: none;
             margin-bottom: var(--spacing-medium);
         }
