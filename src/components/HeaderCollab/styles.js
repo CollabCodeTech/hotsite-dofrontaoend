@@ -29,6 +29,10 @@ export const Header = styled.header`
         width: var(--spacing-active-menu);
     }
 
+    &:focus {
+        width: var(--spacing-menu);
+    }
+
     & > ${BtnCollab}, & > ${Menu} {
         display: none;
     }
@@ -46,7 +50,7 @@ export const Header = styled.header`
 
     & ${CollabCode}, & ${Content} {
         transition: opacity 100ms linear;
-        opacity: ${({ active }) => (active ? 1 : 0)};
+        opacity: ${({ active }) => (active ? '1' : '0')};
     }
 
     &:hover ${CollabCode}, &:hover ${Content} {

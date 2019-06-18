@@ -14,15 +14,27 @@ export const Wrapper = styled.div`
 
 export const Section = styled.section`
     box-sizing: border-box;
-    position: ${({ active }) => (active ? 'static' : 'absolute')};
+    position: ${({ active, preloadActive }) =>
+        active || preloadActive ? 'static' : 'absolute'};
     top: 0;
     left: 0;
     z-index: 1;
     width: 100vw;
     height: 100vh;
     background-color: var(--color-third);
-    transition: opacity 400ms linear;
-    opacity: ${({ active }) => (active ? '1' : '0')};
+    transition: opacity 400ms linear, padding-left 300ms linear;
+    opacity: ${({ active, preloadActive }) =>
+        active || preloadActive ? '1' : '0'};
+    padding-left: ${({ active }) =>
+        active ? 'var(--spacing-active-menu)' : '0px'};
+
+    & > ${Header} {
+        padding-left: calc(var(--spacing-menu) + var(--spacing-big));
+    }
+
+    & > ${Wrapper} {
+        padding-left: var(--spacing-menu);
+    }
 
     & ${VideoWrapper} {
         float: right;

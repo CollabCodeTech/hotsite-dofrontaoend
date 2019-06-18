@@ -8,6 +8,7 @@ import BtnCollab from '../BtnCollab'
 import IconMenu from '../IconMenu'
 
 const HeaderCollab = props => {
+    const element = React.createRef()
     const { itemActive } = props
     const [menuActive, setMenuActive] = useState(false)
     const items = [
@@ -28,8 +29,17 @@ const HeaderCollab = props => {
         setMenuActive(old => !old)
     }
 
+    const handleClickHeader = () => {
+        element.current.focus()
+    }
+
     return (
-        <Header active={itemActive >= 0} menuActive={menuActive}>
+        <Header
+            ref={element}
+            onClick={handleClickHeader}
+            active={itemActive >= 0}
+            menuActive={menuActive}
+        >
             <LogoCollab />
 
             <BtnCollab featured>Pré-inscrição</BtnCollab>
