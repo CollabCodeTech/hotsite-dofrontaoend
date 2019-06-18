@@ -27,14 +27,9 @@ export const Section = styled.section`
     opacity: ${({ active, preloadActive }) =>
         active || preloadActive ? '1' : '0'};
     padding-left: ${({ active, activeMouseEnter }) =>
-        active || activeMouseEnter ? 'var(--spacing-active-menu)' : '0px'};
-
-    & > ${Header} {
-        padding-left: ${({ active, activeMouseEnter }) =>
-            active || activeMouseEnter
-                ? 'var(--spacing-big)'
-                : 'calc(var(--spacing-menu) + var(--spacing-big))'};
-    }
+        active || activeMouseEnter
+            ? 'var(--spacing-active-menu)'
+            : 'var(--spacing-menu)'};
 
     & > ${Wrapper} {
         padding-left: var(--spacing-menu);
@@ -84,16 +79,9 @@ export const Section = styled.section`
     }
 
     @media (max-width: 1140px) {
-        padding-left: ${({ activeMouseEnter }) =>
-            activeMouseEnter
-                ? 'var(--spacing-active-menu)'
-                : 'var(--spacing-menu)'};
-
+        padding-left: var(--spacing-menu);
         & > ${Wrapper} {
             padding-left: var(--spacing-menu);
-        }
-        & > ${Header} {
-            padding-left: var(--spacing-big);
         }
     }
 
