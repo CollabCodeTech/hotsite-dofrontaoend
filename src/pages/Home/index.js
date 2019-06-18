@@ -59,9 +59,8 @@ const Home = () => {
         })
     }
 
-    const handleMouseEnter = () => {
-        setActiveMouseEnter(true)
-    }
+    const handleMouseEnter = () => setActiveMouseEnter(true)
+    const handleMouseLeave = () => setActiveMouseEnter(false)
 
     return (
         <Main>
@@ -69,6 +68,7 @@ const Home = () => {
                 handleClick={handleClick}
                 itemActive={active}
                 onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
             />
 
             <Lead />

@@ -30,5 +30,6 @@ export const Testimonials = styled.div`
 
     @media (max-width: 770px) {
         padding: 0;
+        justify-content: space-around;
     }
 `

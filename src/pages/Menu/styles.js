@@ -22,6 +22,7 @@ export const Section = styled.section`
     width: 100vw;
     height: 100vh;
     background-color: var(--color-third);
+    will-change: padding-left;
     transition: opacity 400ms linear, padding-left 300ms linear;
     opacity: ${({ active, preloadActive }) =>
         active || preloadActive ? '1' : '0'};
@@ -29,7 +30,10 @@ export const Section = styled.section`
         active || activeMouseEnter ? 'var(--spacing-active-menu)' : '0px'};
 
     & > ${Header} {
-        padding-left: calc(var(--spacing-menu) + var(--spacing-big));
+        padding-left: ${({ active, activeMouseEnter }) =>
+            active || activeMouseEnter
+                ? 'var(--spacing-big)'
+                : 'calc(var(--spacing-menu) + var(--spacing-big))'};
     }
 
     & > ${Wrapper} {
@@ -80,15 +84,21 @@ export const Section = styled.section`
     }
 
     @media (max-width: 1140px) {
+        padding-left: ${({ activeMouseEnter }) =>
+            activeMouseEnter
+                ? 'var(--spacing-active-menu)'
+                : 'var(--spacing-menu)'};
+
         & > ${Wrapper} {
             padding-left: var(--spacing-menu);
         }
         & > ${Header} {
-            padding-left: calc(var(--spacing-menu) + var(--spacing-big));
+            padding-left: var(--spacing-big);
         }
     }
 
     @media (max-width: 770px) {
+        padding-left: 0;
         padding-bottom: var(--spacing-very-big);
         text-align: left;
 

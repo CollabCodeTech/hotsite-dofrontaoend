@@ -35,6 +35,7 @@ export const Header = styled.header`
                 ${({ active }) =>
                     active ? 'var(--spacing-active-menu)' : '0px'}
         );
+
     ${({ menu }) => menu && 'padding-right: var(--spacing-page-menu)'};
 
     & > ${TitleCollab} {

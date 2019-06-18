@@ -8,7 +8,7 @@ import BtnCollab from '../BtnCollab'
 import IconMenu from '../IconMenu'
 
 const HeaderCollab = props => {
-    const { onMouseEnter } = props
+    const { onMouseEnter, onMouseLeave } = props
     const element = React.createRef()
     const { itemActive } = props
     const [menuActive, setMenuActive] = useState(false)
@@ -36,6 +36,7 @@ const HeaderCollab = props => {
             active={itemActive >= 0}
             menuActive={menuActive}
             onMouseEnter={onMouseEnter}
+            onMouseLeave={onMouseLeave}
         >
             <LogoCollab />
 
