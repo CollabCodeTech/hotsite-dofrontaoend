@@ -25,8 +25,8 @@ export const Section = styled.section`
     transition: opacity 400ms linear, padding-left 300ms linear;
     opacity: ${({ active, preloadActive }) =>
         active || preloadActive ? '1' : '0'};
-    padding-left: ${({ active }) =>
-        active ? 'var(--spacing-active-menu)' : '0px'};
+    padding-left: ${({ active, activeMouseEnter }) =>
+        active || activeMouseEnter ? 'var(--spacing-active-menu)' : '0px'};
 
     & > ${Header} {
         padding-left: calc(var(--spacing-menu) + var(--spacing-big));

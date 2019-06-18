@@ -6,8 +6,23 @@ import HeaderContent from '../../components/HeaderContent'
 import ListContent from '../../components/ListContent'
 import VideoAbout from '../../components/VideoAbout'
 
-const Menu = ({ id, title, subtitle, items, active, preloadActive, myRef }) => (
-    <Section id={id} active={active} ref={myRef} preloadActive={preloadActive}>
+const Menu = ({
+    id,
+    title,
+    subtitle,
+    items,
+    active,
+    preloadActive,
+    myRef,
+    activeMouseEnter
+}) => (
+    <Section
+        id={id}
+        active={active}
+        ref={myRef}
+        preloadActive={preloadActive}
+        activeMouseEnter={activeMouseEnter}
+    >
         <HeaderContent
             title={title}
             subtitle={subtitle}

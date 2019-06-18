@@ -24,6 +24,7 @@ export const Header = styled.header`
     will-change: width;
     transition: width 300ms linear;
     cursor: pointer;
+    box-shadow: 6px 0 2px var(--color-negative-light);
 
     &:hover {
         width: var(--spacing-active-menu);

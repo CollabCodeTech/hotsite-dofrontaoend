@@ -46,6 +46,7 @@ const menus = [
 const Home = () => {
     const [active, setActive] = useState()
     const [preloadActive, setPreloadActive] = useState(0)
+    const [activeMouseEnter, setActiveMouseEnter] = useState(false)
     let refsMenu = []
 
     const handleClick = (event, key) => {
@@ -58,9 +59,17 @@ const Home = () => {
         })
     }
 
+    const handleMouseEnter = () => {
+        setActiveMouseEnter(true)
+    }
+
     return (
         <Main>
-            <HeaderCollab handleClick={handleClick} itemActive={active} />
+            <HeaderCollab
+                handleClick={handleClick}
+                itemActive={active}
+                onMouseEnter={handleMouseEnter}
+            />
 
             <Lead />
             <Wrapper>
@@ -78,6 +87,7 @@ const Home = () => {
                             items={menu.items}
                             preloadActive={preloadActive === menu.id}
                             active={active === menu.id}
+                            activeMouseEnter={activeMouseEnter}
                         />
                     )
                 })}
