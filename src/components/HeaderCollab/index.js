@@ -26,10 +26,6 @@ const HeaderCollab = props => {
         setMenuActive(old => !old)
     }
 
-    const handleClickNavigation = () => {
-        setMenuActive(old => !old)
-    }
-
     return (
         <Header
             ref={element}
@@ -48,7 +44,7 @@ const HeaderCollab = props => {
                 id="navigation"
                 {...props}
                 items={items}
-                onClick={handleClickNavigation}
+                onClick={handleMenuClick}
             />
         </Header>
     )
