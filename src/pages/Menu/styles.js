@@ -9,7 +9,7 @@ import { List } from '../../components/ListContent/styles'
 
 export const Wrapper = styled.div`
     padding-left: ${({ preloadActive }) =>
-        preloadActive ? 'var(--spacing-active-menu)' : 'var(--spacing-menu)'};
+        preloadActive ? 'var(--spacing-active-menu)' : 'var(--spacing-medium)'};
 `
 
 export const Section = styled.section`
@@ -27,13 +27,13 @@ export const Section = styled.section`
     transition: opacity 400ms linear, padding-left 300ms linear;
     opacity: ${({ active, preloadActive }) =>
         active || preloadActive ? '1' : '0'};
-    padding-left: ${({ active, activeMouseEnter }) =>
-        active || activeMouseEnter
+    padding-left: ${({ activeMouseEnter }) =>
+        activeMouseEnter
             ? 'var(--spacing-active-menu)'
             : 'var(--spacing-menu)'};
 
     & > ${Wrapper} {
-        padding-left: var(--spacing-menu);
+        padding-left: var(--spacing-medium);
     }
 
     & ${VideoWrapper} {
@@ -43,7 +43,7 @@ export const Section = styled.section`
 
     & ${List} {
         padding-top: var(--spacing-big);
-        padding-left: var(--spacing-big);
+        padding-left: var(--spacing-medium);
     }
 
     @media (max-width: 1330px) {
@@ -81,6 +81,7 @@ export const Section = styled.section`
 
     @media (max-width: 1140px) {
         padding-left: var(--spacing-menu);
+
         & > ${Wrapper} {
             padding-left: var(--spacing-menu);
         }

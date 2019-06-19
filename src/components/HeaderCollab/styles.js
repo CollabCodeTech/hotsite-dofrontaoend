@@ -11,8 +11,7 @@ export const Header = styled.header`
     background-color: var(--color-zero);
     overflow: hidden;
     padding: var(--spacing-medium) var(--spacing-medium) 0;
-    width: ${({ active }) =>
-        active ? 'var(--spacing-active-menu)' : 'var(--spacing-menu)'};
+    width: var(--spacing-menu);
     height: 100vh;
     position: fixed;
     z-index: 10;
@@ -51,7 +50,7 @@ export const Header = styled.header`
 
     & ${CollabCode}, & ${Content} {
         transition: opacity 100ms linear;
-        opacity: ${({ active }) => (active ? '1' : '0')};
+        opacity: 0;
     }
 
     &:hover ${CollabCode}, &:hover ${Content} {

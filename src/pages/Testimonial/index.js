@@ -7,8 +7,8 @@ import VideoTestimonial from '../../components/VideoTestimonial'
 
 const students = ['Rafael', 'Lucas', 'Lais', 'Isabela', 'Felipe', 'Denise']
 
-const Testimonial = () => (
-    <Wrapper>
+const Testimonial = ({ activeMouseEnter }) => (
+    <Wrapper activeMouseEnter={activeMouseEnter}>
         <HeaderContent
             title="Porque a CollabCode?"
             subtitle="Veja alguns comentários dos nossos alunos"

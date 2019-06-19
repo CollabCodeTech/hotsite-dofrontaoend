@@ -12,6 +12,10 @@ export const Item = styled.li`
     }
 `
 
+export const Link = styled.a`
+    display: block;
+`
+
 export const Number = styled.span`
     display: inline-block;
     width: 1.2ch;

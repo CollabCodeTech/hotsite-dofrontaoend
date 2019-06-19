@@ -12,7 +12,7 @@ const HeaderContent = ({ title, subtitle, menu = false, mobile = false }) => (
     <Header menu={menu} mobile={mobile}>
         <Actions>
             <LinkCollab>Depoimentos</LinkCollab>
-            <BtnCollab>Inscrever-se</BtnCollab>
+            <BtnCollab>Pré-inscrição</BtnCollab>
         </Actions>
 
         <TitleCollab>{title}</TitleCollab>

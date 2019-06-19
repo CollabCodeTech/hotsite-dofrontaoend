@@ -19,15 +19,15 @@ const BtnCollab = styled.button.attrs({
         width 600ms cubic-bezier(0.94, -0.64, 0, 1);
     cursor: pointer;
 
+    &:focus,
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0px 2px 4px var(--color-base);
+    }
+
     ${({ loading }) =>
         !loading &&
         css`
-            &:focus,
-            &:hover {
-                transform: translateY(-3px);
-                box-shadow: 0px 2px 4px var(--color-base);
-            }
-
             &:active {
                 transform: translateY(-1px);
             }

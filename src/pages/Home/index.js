@@ -92,7 +92,7 @@ const Home = () => {
                     )
                 })}
             </Wrapper>
-            <Testimonial />
+            <Testimonial activeMouseEnter={activeMouseEnter} />
             <Instructor />
         </Main>
     )
