@@ -12,6 +12,7 @@ const Testimonial = ({ activeMouseEnter }) => (
         <HeaderContent
             title="Porque a CollabCode?"
             subtitle="Veja alguns comentários dos nossos alunos"
+            testimonial={false}
         />
 
         <Testimonials>
