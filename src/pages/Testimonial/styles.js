@@ -31,7 +31,7 @@ export const Wrapper = styled.section`
 export const Testimonials = styled.div`
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding-left: var(--spacing-big);
 
     & ${Video} {
