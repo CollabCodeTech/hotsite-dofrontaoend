@@ -12,6 +12,7 @@ const Base = createGlobalStyle`
     body {
         max-width: 100%;
         position: relative;
+        overflow-x: hidden;
     }
 
     input {
