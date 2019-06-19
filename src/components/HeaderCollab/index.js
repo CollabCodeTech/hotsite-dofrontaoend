@@ -42,7 +42,7 @@ const HeaderCollab = props => {
 
             <BtnCollab featured>Pré-inscrição</BtnCollab>
 
-            <IconMenu href="#navigation" onClick={handleMenuClick} />
+            <IconMenu onClick={handleMenuClick} />
 
             <NavigationCollab
                 id="navigation"
