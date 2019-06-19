@@ -14,7 +14,8 @@ const Menu = ({
     active,
     preloadActive,
     myRef,
-    activeMouseEnter
+    activeMouseEnter,
+    handleClickTestimonial
 }) => (
     <Section
         id={id}
@@ -29,6 +30,7 @@ const Menu = ({
             menu
             mobile
             active={active}
+            handleClickTestimonial={handleClickTestimonial}
         />
 
         <Wrapper preloadActive={preloadActive}>

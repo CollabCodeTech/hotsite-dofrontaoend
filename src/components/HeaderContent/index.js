@@ -13,11 +13,16 @@ const HeaderContent = ({
     title,
     subtitle,
     menu = false,
-    mobile = false
+    mobile = false,
+    handleClickTestimonial
 }) => (
     <Header menu={menu} mobile={mobile}>
         <Actions>
-            {testimonial && <LinkCollab>Depoimentos</LinkCollab>}
+            {testimonial && (
+                <LinkCollab onClick={handleClickTestimonial}>
+                    Depoimentos
+                </LinkCollab>
+            )}
             <BtnCollab>Pré-inscrição</BtnCollab>
         </Actions>
 

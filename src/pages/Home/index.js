@@ -47,13 +47,23 @@ const Home = () => {
     const [active, setActive] = useState()
     const [preloadActive, setPreloadActive] = useState(0)
     const [activeMouseEnter, setActiveMouseEnter] = useState(false)
+    let refTestimonial = null
     let refsMenu = []
 
-    const handleClick = (event, key) => {
+    const handleClickHeader = (event, key) => {
         event.preventDefault()
         setActive(key)
         setPreloadActive(null)
         refsMenu[key].current.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        })
+    }
+
+    const handleClickTestimonial = event => {
+        event.preventDefault()
+
+        refTestimonial.current.scrollIntoView({
             behavior: 'smooth',
             block: 'start'
         })
@@ -65,7 +75,7 @@ const Home = () => {
     return (
         <Main>
             <HeaderCollab
-                handleClick={handleClick}
+                handleClick={handleClickHeader}
                 itemActive={active}
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
@@ -88,11 +98,22 @@ const Home = () => {
                             preloadActive={preloadActive === menu.id}
                             active={active === menu.id}
                             activeMouseEnter={activeMouseEnter}
+                            handleClickTestimonial={handleClickTestimonial}
                         />
                     )
                 })}
             </Wrapper>
-            <Testimonial activeMouseEnter={activeMouseEnter} />
+            {(() => {
+                refTestimonial = React.createRef()
+
+                return (
+                    <Testimonial
+                        myRef={refTestimonial}
+                        activeMouseEnter={activeMouseEnter}
+                    />
+                )
+            })()}
+
             <Instructor />
         </Main>
     )
