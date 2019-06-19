@@ -21,6 +21,7 @@ export const Section = styled.section`
     z-index: 1;
     width: 100vw;
     height: 100vh;
+    min-height: 900px;
     background-color: var(--color-third);
     will-change: padding-left;
     transition: opacity 400ms linear, padding-left 300ms linear;
