@@ -9,6 +9,11 @@ const Base = createGlobalStyle`
         min-width: 300px;
     }
 
+    body {
+        max-width: 100%;
+        position: relative;
+    }
+
     input {
         font-family: inherit;
         font-size: inherit;

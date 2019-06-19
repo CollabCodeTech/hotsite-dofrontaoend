@@ -13,7 +13,7 @@ const Lead = () => (
         <Section>
             <TitleDofrontaoend>do Front ao End</TitleDofrontaoend>
             <SubtitleCollab featured>
-                A Semana Do Front ao End acontece XX/XX até XX/XX é um evento
+                A Semana Do Front ao End acontece 08/XX até XX/XX é um evento
                 100% gratuito e ao vivo, focado para quem quer ser Dev FrontEnd
             </SubtitleCollab>
 
