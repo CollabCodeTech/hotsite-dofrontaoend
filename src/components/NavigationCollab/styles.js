@@ -25,7 +25,7 @@ export const Number = styled.span`
 `
 
 export const Content = styled.strong`
-    vertical-align: bottom;
+    vertical-align: middle;
     font-size: var(--size-half-big);
     position: relative;
     font-weight: normal;
