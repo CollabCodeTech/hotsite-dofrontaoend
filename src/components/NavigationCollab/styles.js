@@ -20,6 +20,8 @@ export const Number = styled.span`
     display: inline-block;
     width: 1.2ch;
     text-align: center;
+    font-weight: ${({ itemActive }) => !itemActive && 'normal'};
+    color: ${({ itemActive }) => itemActive && 'var(--color-first)'};
 `
 
 export const Content = styled.strong`

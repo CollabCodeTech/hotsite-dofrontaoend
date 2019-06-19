@@ -7,7 +7,7 @@ const NavigationCollab = ({ id, handleClick, items, itemActive, onClick }) => (
         {items.map((content, key) => (
             <Item key={key} onClick={event => handleClick(event, key)}>
                 <Link href={`#${key}`}>
-                    <Number>{key}</Number>{' '}
+                    <Number itemActive={itemActive === key}>{key}</Number>{' '}
                     <Content itemActive={itemActive === key}>{content}</Content>
                 </Link>
             </Item>
