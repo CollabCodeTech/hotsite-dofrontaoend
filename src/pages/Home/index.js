@@ -54,6 +54,7 @@ const Home = () => {
         event.preventDefault()
         setActive(key)
         setPreloadActive(null)
+
         refsMenu[key].current.scrollIntoView({
             behavior: 'smooth',
             block: 'start'

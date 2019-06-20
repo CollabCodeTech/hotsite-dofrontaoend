@@ -47,7 +47,9 @@ export const Header = styled.header`
     }
 
     @media (max-width: 770px) {
-        padding: 0 0 var(--spacing-big);
+        padding: ${({ testimonial }) =>
+                testimonial && 'var(--spacing-over-big)'}
+            0 var(--spacing-big);
         height: auto;
         margin-bottom: var(--spacing-big);
         ${({ mobile }) =>

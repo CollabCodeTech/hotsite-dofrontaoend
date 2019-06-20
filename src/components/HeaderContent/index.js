@@ -16,7 +16,7 @@ const HeaderContent = ({
     mobile = false,
     handleClickTestimonial
 }) => (
-    <Header menu={menu} mobile={mobile}>
+    <Header menu={menu} mobile={mobile} testimonial={testimonial}>
         <Actions>
             {testimonial && (
                 <LinkCollab onClick={handleClickTestimonial}>

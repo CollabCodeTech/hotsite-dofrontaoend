@@ -10,6 +10,7 @@ const Base = createGlobalStyle`
     }
 
     body {
+        height: 100%;
         max-width: 100%;
         position: relative;
         overflow-x: hidden;
